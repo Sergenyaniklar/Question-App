@@ -1,15 +1,20 @@
+import CinSeddi from'../public/cin-seddi.jpg';
+import Pamuk from '../public/pamuk.jpg';
+
+
+
 export const questions = [
     {
       question: "Çin Seddini oluşturan taşlar birbirine ne ile tutturulmuştur?",
       options: ["Bambu Harcı", "Anne Duası", "Pirinç Unu", "Noodle"],
       answer: "Pirinç Unu",
-      media: "public/cin-seddi.jpg"
+      media: CinSeddi
     },
     {
       question: "İlk Pamuk şekeri bulan kişinin mesleği nedir?",
       options: ["Gıda Mühendisi", "Diş Doktoru", "Ev Hanımı", "Güzellik Uzmanı"],
       answer: "Diş Doktoru",
-      media: "public/pamuk.jpg"
+      media: Pamuk
     },
     {
       question: "Tarkan'ın 'Hüp' klibini izledikten sonra gaza gelip 'Tarkan keşke beni hüpletseydi' diye açıklamda bulunan kişi kimdir?",
