@@ -1,7 +1,13 @@
 import CinSeddi from'../public/cin-seddi.jpg';
 import Pamuk from '../public/pamuk.jpg';
 import Tarkan from '../public/tarkan.jpg';
-import Pteronofobi from 'public/fobi.jpg'
+import Pteronofobi from '../public/fobi.jpg'
+import Balik from '../public/balik.jpg'
+import Bandira from '../public/bandira.jpg'
+import Bilborda from '../public/billboard.jpg'
+import Parfüm from '../public/parfum.jpg'
+import Timsah from '../public/trex.jpg'
+import Fobi from '../public/fobi.jpg'
 
 
 
@@ -40,37 +46,37 @@ export const questions = [
       question: "Ortalama ömürleri 5 yıl olan Japon balıklarının en uzun yaşayanı Tish, bütün istatistikleri alt üst ederek kaç yıl boyunca hayata tutunmayı başarmıştır?",
       options: ["43", "78", "23", "99"],
       answer: "43",
-      media: "public/balik.jpg"
+      media: Balik
     },
     {
       question: "90'lara damgasını vuran 'Bandıra Bandıra' şarkısının söz yazarı kimdir?",
       options: ["Sezen Aksu", "Sibel Can", "Mustafa Sandal", "Bülent Ersoy"],
       answer: "Mustafa Sandal",
-      media: "public/bandira.jpg"
+      media: Bandira
     },
     {
       question: "Hangi şarkıcımız yine kendisi gibi şarkıcı olan sevgilisinden ayrıldıktan sonra tam evinin karşısındaki apartmanın tamamını kendi posteriyle kaplatmıştır?",
       options: ["Hande Yener", "Hadise", "Gülşen", "Simge"],
       answer: "Hadise",
-      media: "public/billboard.jpg"
+      media: Bilborda
     },
     {
       question: "Antik Roma'da kadınlar parfüm olarak ne kullanıyordu?",
       options: ["Gül Suyu", "Bal", "Gladyatör Teri", "Kan"],
       answer: "Gladyatör Teri",
-      media: "public/parfum.jpg"
+      media: Parfüm
     },
     {
       question: "T-Rex'in yaşayan en yakın akrabası aşağıdakilerden hangisidir?",
       options: ["İnekler", "Tavuklar", "Timsahlar", "Köpekler"],
       answer: "Tavuklar",
-      media: "public/trex.jpg"
+      media: Timsah
     },
     {
       question: "Her şeyin olduğu gibi mutluluğun da fobisi varmış. Bu fobiye ne ad verilir?",
       options: ["Çerofobi", "Euphobia", "Felicifobia", "Mutluluk Korkusu"],
       answer: "Çerofobi",
-      media: "public/fobi.jpg"
+      media: Fobi
     }
   ];
 
