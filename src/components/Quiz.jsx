@@ -150,8 +150,8 @@ const Quiz = () => {
             <button 
               key={index} 
               className={`answer-button ${selectedAnswer === option ? 'selected' : ''}`} // Seçilen cevaba özel stil ver
-              onClick={() => !showAnswerDelay && handleNextQuestion(option)} // Cevap gecikmesi aktifken yeni cevaba izin verme
-              disabled={showAnswerDelay} // Gecikme süresince butonları devre dışı bırak
+              onClick={() => !showAnswerDelay && handleNextQuestion(option)} // Do not allow new responses when response delay is active
+              disabled={showAnswerDelay} // Disable buttons during delay
             >
               {option}
             </button>
