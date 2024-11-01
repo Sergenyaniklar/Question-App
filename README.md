@@ -7,3 +7,9 @@ HTML
 CSS
 REACT
 JAVASCRİPT
+
+# İmages
+![Quiz App](https://github.com/user-attachments/assets/4fc92568-9660-4e63-bc93-f86860bb30af)
+
+# Live Link
+https://patika-questionapp-g7v6.vercel.app/
