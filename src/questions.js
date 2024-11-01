@@ -1,5 +1,8 @@
 import CinSeddi from'../public/cin-seddi.jpg';
 import Pamuk from '../public/pamuk.jpg';
+import Tarkan from '../public/tarkan.jpg';
+import Pteronofobi from 'public/fobi.jpg'
+
 
 
 
@@ -20,7 +23,7 @@ export const questions = [
       question: "Tarkan'ın 'Hüp' klibini izledikten sonra gaza gelip 'Tarkan keşke beni hüpletseydi' diye açıklamda bulunan kişi kimdir?",
       options: ["Gülben Ergen", "Hülya Avşar", "Harika Avcı", "Sevtap Parman"],
       answer: "Gülben Ergen",
-      media: "public/tarkan.jpg"
+      media: Tarkan
     },
     {
       question: "Pteronofobi nedir?",
@@ -31,7 +34,7 @@ export const questions = [
         "Kuş tüyüyle gıdıklanma korkusu"
       ],
       answer: "Kuş tüyüyle gıdıklanma korkusu",
-      media: "public/fobi.jpg"
+      media: Pteronofobi
     },
     {
       question: "Ortalama ömürleri 5 yıl olan Japon balıklarının en uzun yaşayanı Tish, bütün istatistikleri alt üst ederek kaç yıl boyunca hayata tutunmayı başarmıştır?",
