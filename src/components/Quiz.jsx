@@ -2,17 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { questions } from '../questions';
 
 const Quiz = () => {
-  // Quiz için state değişkenleri
+  // state variables for the quiz
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [showOptions, setShowOptions] = useState(false);
   const [timeLeft, setTimeLeft] = useState(30);
   const [finished, setFinished] = useState(false);
   const [quizStarted, setQuizStarted] = useState(false);
-  const [showAnswerDelay, setShowAnswerDelay] = useState(false); // Cevap gösterme gecikmesi için state
-  const [selectedAnswer, setSelectedAnswer] = useState(null); // Seçilen cevabı saklamak için state
+  const [showAnswerDelay, setShowAnswerDelay] = useState(false);
+  const [selectedAnswer, setSelectedAnswer] = useState(null); 
 
-  // Zamanlayıcı ve diğer state güncellemelerini yönetmek için effect hook
+  // Effect hook to manage timer and other state updates
   useEffect(() => {
     let timer;
     if (currentQuestion < questions.length && !finished) {
@@ -23,7 +23,7 @@ const Quiz = () => {
       const countdown = setInterval(() => {
         setTimeLeft((prevTime) => {
           if (prevTime <= 1) {
-            handleNextQuestion(null); // Cevap verilmezse null olarak geçilecek
+            handleNextQuestion(null);
             return 30;
           }
           return prevTime - 1;
@@ -37,12 +37,12 @@ const Quiz = () => {
     }
   }, [currentQuestion, showOptions, finished]);
 
-  // Bir cevabı seçme ve sonraki soruya geçme fonksiyonu
+  // Function for selecting an answer and moving to the next question
   const handleNextQuestion = (selectedAnswer) => {
-    setSelectedAnswer(selectedAnswer); // Seçilen cevabı kaydet
-    setShowAnswerDelay(true); // Cevap gösterme gecikmesini başlat
+    setSelectedAnswer(selectedAnswer);
+    setShowAnswerDelay(true);
 
-    // Cevapları kaydet ve 2 saniye sonra sonraki soruya geç
+    //Save answers and move on to next question after 2 seconds
     setTimeout(() => {
       const newAnswers = [
         ...answers,
@@ -62,13 +62,13 @@ const Quiz = () => {
         setCurrentQuestion(currentQuestion + 1);
         setShowOptions(false);
         setTimeLeft(30);
-        setSelectedAnswer(null); // Yeni soruya geçtiğimizde seçimi sıfırla
+        setSelectedAnswer(null);
       }
-      setShowAnswerDelay(false); // Gecikmeyi kaldır
-    }, 2000); // 2 saniyelik gecikme
+      setShowAnswerDelay(false);
+    }, 1000);
   };
 
-  // Doğru, yanlış ve boş cevap sayılarını hesaplama fonksiyonu
+  // Function to calculate the number of correct, incorrect and blank answers
   const calculateResults = () => {
     const correctCount = answers.filter(answer => answer.isCorrect).length;
     const incorrectCount = answers.filter(answer => !answer.isCorrect && !answer.isBlank).length;
@@ -76,7 +76,7 @@ const Quiz = () => {
     return { correctCount, incorrectCount, blankCount };
   };
 
-  // Quiz başlatma fonksiyonu
+ // Quiz launch function
   const startQuiz = () => {
     setQuizStarted(true);
     setCurrentQuestion(0);
@@ -86,7 +86,7 @@ const Quiz = () => {
     setFinished(false);
   };
 
-  // Quiz sonuç ekranı
+  // Quiz result screen
   if (finished) {
     const { correctCount, incorrectCount, blankCount } = calculateResults();
     return (
@@ -115,7 +115,7 @@ const Quiz = () => {
     );
   }
 
-  // Başlangıç ekranı
+  // Start screen
   if (!quizStarted) {
     return (
       <div className="quiz-container">
@@ -131,13 +131,13 @@ const Quiz = () => {
             <li>Geçmiş sorulara geri dönemezsiniz, bu yüzden cevabınızı seçmeden önce iyi düşünün!</li>
           </ul>
           <p>Test sonunda, doğru ve yanlış cevap sayılarınızı göreceksiniz. Hazırsanız, başlayın ve bilginizi sınayın!</p>
-          <button onClick={startQuiz} className="start-button" id='start'>Start Quiz</button>
+          <button onClick={startQuiz} className="start-button" id='start'>Teste Başla</button>
         </div>
       </div>
     );
   }
 
-  // Soru ekranı
+  // Question screen
   return (
     <div className="quiz-container">
       <div className="quiz-card">

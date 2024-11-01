@@ -1,13 +1,13 @@
 import CinSeddi from'../public/cin-seddi.jpg';
 import Pamuk from '../public/pamuk.jpg';
 import Tarkan from '../public/tarkan.jpg';
-import Pteronofobi from '../public/fobi.jpg'
-import Balik from '../public/balik.jpg'
-import Bandira from '../public/bandira.jpg'
-import Bilborda from '../public/billboard.jpg'
-import Parfüm from '../public/parfum.jpg'
-import Timsah from '../public/trex.jpg'
-import Fobi from '../public/fobi.jpg'
+import Pteronofobi from '../public/fobi.jpg';
+import Balik from '../public/balik.jpg';
+import Bandira from '../public/bandira.jpg';
+import Bilborda from '../public/billboard.jpg';
+import Parfüm from '../public/parfum.jpg';
+import Timsah from '../public/trex.jpg';
+import Fobi from '../public/fobi.jpg';
 
 
 
