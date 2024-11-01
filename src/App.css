@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Quiz container   
+ styles */
+.quiz-container {
+  display: flex;
+  margin-left: 300px;
+  height: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+/* Quiz card styles */
+.quiz-card {
+  background-color: rgb(216, 172, 172);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 70%;
+}
+/* Question text styles */
+.question-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
+}
+/* Question image styles */
+.question-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+/* Answer button styles */
+.answer-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0.5rem;
+  background-color: #b32626;
+  border: none;
+  border-radius: 4px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/* Hover effect for answer buttons */
+.answer-button:hover {
+  background-color: #e0e0e0;
+}
+/* Result message styles */
+.result-message {
+  width: 1000px;
+  margin-top: 700px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
