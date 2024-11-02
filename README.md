@@ -9,7 +9,9 @@ REACT
 JAVASCRİPT
 
 # İmages
-![Quiz App](https://github.com/user-attachments/assets/4fc92568-9660-4e63-bc93-f86860bb30af)
+![1](https://github.com/user-attachments/assets/a52a8731-2a6d-4ef3-a843-8cfa1b4b77b0)
+![2](https://github.com/user-attachments/assets/a4adc553-21cd-4ff1-b63a-b4c416ef476e)
+![3](https://github.com/user-attachments/assets/bfaa5512-cf46-4ee1-8e80-257230e78e93)
 
 # Live Link
 https://patika-questionapp-g7v6.vercel.app/
